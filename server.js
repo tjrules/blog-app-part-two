@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const PORT = process.env.PORT || 3000;
 
-app.use(morgan('dev'))
+app.use(morgan('combined'))
 
 app.use(bodyParser.json());
 
